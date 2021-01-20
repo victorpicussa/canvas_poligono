@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Polígono</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="./polygon.css">
+</head>
+<body>
+    <button id="hide" class="show_hide">Esconder</button>
+    <div id="form" class="box form">
+        <p>Quantidade de lados do polígono base (3 a 8)</p>
+        <input type="text" id="vertices">
+        <button type="submit" onclick="{generatePolygon()}">Gerar</button>
+    </div>
+    <canvas id="canvas"></canvas>
+    <div id="help" class="box help">
+        <ol>
+            <li>Clicar em um vértice possibilita move-lo</li>
+            <li>Clicar em uma linha possibilita mover o polígono</li>
+            <li>Clicar com o botão direito em uma linha cria um novo vértice</li>
+        </ol>
+    </div>
+    <button id="hide_help" class="show_hide_help">Ajuda</button>
+    <script src="./polygon.js"></script>
+</body>
+</html>
